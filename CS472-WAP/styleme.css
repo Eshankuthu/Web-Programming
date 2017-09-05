@@ -1,0 +1,46 @@
+body{
+	background-color : #696969;
+	font-family : Arial Black;
+	font-size : 12px;
+	color : #fff;
+				
+}
+#about-me p:first-letter {
+  color: #903;
+ 
+  font-family: Georgia;
+  font-size: 25px;
+ 
+}
+
+strong{
+	
+	color : yellow;
+	
+}
+
+#about-me{
+	border-bottom : 1px dotted #ffffff;
+}
+
+a{
+	text-decoration : none;
+	color : Red;
+	
+}
+
+a:hover{
+	text-decoration : underline;
+	color : blue;
+	
+}
+
+h1{
+	color:#87CEFA;
+}
+			
+h2{
+	color:#87CEFA;
+	
+	}
+		
