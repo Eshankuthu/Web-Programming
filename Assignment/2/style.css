@@ -1,0 +1,18 @@
+#menu{
+
+
+background-color: red;
+overflow: auto;
+padding: 30px;
+text-align: center;
+
+  }
+
+  #menu li{
+  background-color: white;
+   display: inline;
+   border: 2px solid black;
+   padding: 20px;
+   margin-right: 5px;
+
+}

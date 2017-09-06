@@ -1,0 +1,19 @@
+
+
+h1{
+  background-color: yellow;
+}
+
+#container{
+  padding: 10px;
+  background-color: lightgray;
+  overflow: hidden;
+
+}
+
+#area1, #area2{
+  float:right;
+  width: 200px;
+  background-color: lightblue;
+  margin-right: 15px;
+}
