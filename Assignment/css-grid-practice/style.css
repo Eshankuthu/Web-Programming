@@ -1,0 +1,25 @@
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px 5px;
+
+}
+
+.box{
+  background-color: blue;
+
+}
+
+.box-1{
+  height: 400px;
+  width:600px;
+
+   background-image: url(https://ichef.bbci.co.uk/news/624/cpsprodpb/15B89/production/_97696988_041501441-1.jpg)
+
+}
+
+.box-1>h1{
+
+  color: white;
+
+}
