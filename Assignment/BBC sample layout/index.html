@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BBC.com</title>
+
+    <style type="text/css">
+
+        body {
+            margin: 0 auto;
+        }
+
+
+        #dateshow{
+          float: right;
+        }
+
+        div#mainContainer {
+            width: 90%;
+            margin: 1em;
+            box-sizing: border-box;
+        }
+
+        article {
+            border: 1px solid #a0a0a0;
+        }
+
+        #newsHeadlines {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-template-rows: auto;
+          grid-template-areas: "mainHeadline subHeadlines";
+          grid-gap: 1em;
+
+          color: #ffffff;
+        }
+
+        #mainHeadline {
+            grid-area: mainHeadline;
+            background-color: lightgreen;
+            background-image: url("https://static.pexels.com/photos/33109/fall-autumn-red-season.jpg")
+
+        }
+
+        #subHeadlines {
+            grid-area: subHeadlines;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            grid-gap: 1em;
+        }
+
+         .module__title {
+
+
+            text-align: right;
+            font-size: 1.25rem;
+            margin: 10px;
+            padding-top: 1rem;
+            font-weight: normal;}
+    </style>
+
+</head>
+<body>
+    <div id="mainContainer">
+
+    <h2 class="module__title" style="opacity: 1;"><span style="float:left">Welcome to BBC.com</span>Thursday, 7 September</h2>
+
+        <section id="newsHeadlines">
+
+              <article id="mainHeadline">
+                  <h2>Main Headline</h2>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, hic consequatur. Hic iste provident non sapiente libero quae iure? Nemo quidem provident nobis eum tenetur.
+                  </p>
+                  <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, hic consequatur. Hic iste provident non sapiente libero quae iure? Nemo quidem provident nobis eum tenetur.
+                  </p>
+              </article>
+
+              <section id="subHeadlines">
+                <article class="subHeadline" style="background-color: lightcoral;">
+                    <h2>Sub Headline1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, facere odit non, iusto sequi deleniti dolores repudiandae sapiente asperiores porro, nihil quae. Nulla qui consectetur architecto nemo repellendus a iste?
+                    </p>
+                </article>
+                <article class="subHeadline" style="background-color: lightBlue;">
+                    <h2>Sub Headline2</h2>
+                </article>
+                <article class="subHeadline" style="background-color: lightsalmon;">
+                    <h2>Sub Headline3</h2>
+                </article>
+                <article class="subHeadline" style="background-color: lightpink;">
+                    <h2>Sub Headline4</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, facere odit non, iusto sequi deleniti dolores repudiandae sapiente asperiores porro, nihil quae. Nulla qui consectetur architecto nemo repellendus a iste?
+                    </p>
+                </article>
+              </section>
+
+        </section>
+
+    </div>
+</body>
+</html>

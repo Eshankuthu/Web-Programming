@@ -1,0 +1,86 @@
+body {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif, serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #18619f;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #367bb5;
+}
+
+.clear {
+    clear: both;
+    overflow: hidden;
+}
+
+.my-section {
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ffffff;
+}
+
+.my-section h3 {
+    color: #dc7d4e;
+}
+
+.my-section strong {
+    color: #f1d268;
+}
+
+.my-section ul li {
+    list-style: square;
+}
+
+#name {
+    color: cadetblue;
+    text-shadow: 2px 2px #000000;
+}
+
+#my-moods .my-mood {
+    width: 49%;
+    float: left;
+    border-right: 1px solid #ffffff;
+}
+
+#my-moods .my-mood:last-child {
+    border: none;
+    margin-left: 20px;
+}
+
+#my-moods .my-mood img{
+    width: 400px;
+}
+
+#my-moods .my-mood h4{
+    color: #f1d268;
+}
+
+#about-me p:first-letter {
+    color: #dc7d4e;
+    font-size: 24px;
+    line-height: normal;
+}
+
+#favorite-movies ol {
+    transform: rotate(180deg);
+}
+
+#favorite-movies ol > li {
+    transform: rotate(-180deg) translateX(40px);
+}
+
+#favorite-movies ol > li dl {
+    margin: 0;
+    font-size: 13px;
+}
+
+#favorite-movies ol > li dl dt{
+    color: #f1d268;
+    margin: 3px 0 5px;
+}

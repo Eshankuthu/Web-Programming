@@ -1,0 +1,44 @@
+body {
+  background: white;
+  padding: 10px;
+
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header"
+                       "left main-content right"
+                       "footer footer footer";
+  grid-gap: 3px;
+  height: 96vh;
+}
+
+.header, .sidebar-left, .sidebar-right, .main-content, .footer {
+  background-color: lightblue;
+  padding: 1em;
+}
+
+.header {
+  grid-area: header;
+  background-color: green;
+  vertical-align: text-top;
+}
+
+.sidebar-left { grid-area: left;
+  background-color: orange;
+ }
+
+.main-content {
+  grid-area: main-content;
+  vertical-align: text-top;
+}
+
+.sidebar-right { grid-area: right;  background-color: orange; }
+
+.footer {
+  grid-area: footer;
+    background-color: green;
+
+}
