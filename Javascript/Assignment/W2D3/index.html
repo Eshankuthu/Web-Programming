@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title>Week 2 Day 3 Lab – Closure and Module Pattern</title>
+
+	<body>
+
+	<script>
+"use strict";
+
+
+  //  x=1;
+	//  var a=5;
+	//  var b=10;
+	//  var c = function(a,b,c){
+	// 	 								document.writeln(x);
+	// 									document.writeln(a);
+	// 									var f= function(a,b,c){
+	// 																		b=a;
+	// 																		document.writeln(b);
+	// 																		b=c;
+	// 																		var x=5;
+	 //
+	// 																	}
+	// 									f(a,b,c);
+	// 									document.writeln(b);
+	// 								var x=10;
+	//  								}
+	//  c(8,9,10);
+	//  document.writeln(b);
+	//  document.writeln(x);
+
+
+  // var x=9;
+	// function myFunction(){
+	// 		return x*x;
+	// }
+	// document.writeln(myFunction());
+	// x=5;
+	// document.writeln(myFunction());
+
+//5
+	// var foo = 1;
+	// function bar(){
+	// 	 if(!foo){
+	// 		 	var foo=10;
+	// 	 }
+	// 	 alert(foo);
+	// }
+	// bar();
+
+//6
+// var count =(function(){
+// 	 var counter=0;
+// 	 return {
+// 		  add:()=>++counter,
+// 			reset:()=>{counter=0},
+// 			get:()=>counter
+// 	 }
+// })();
+// count.add();
+// count.add();
+// console.log(count.get());
+// count.reset();
+// console.log(count.get());
+
+//8
+
+
+
+//10
+var Employee =(function(){
+					var name;
+					var age;
+					var salary;
+					 function getName(){
+						 return name;
+					 }
+
+					 function getAge(){
+						 return age;
+					 }
+
+					 function getSalary(){
+						 return salary;
+					 }
+
+						return {
+									setName :newName => {name = newName},
+
+
+						}
+
+})();
+
+
+
+		</script>
+
+	</body>
+</html>
