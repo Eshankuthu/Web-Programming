@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title>JavaScript Calculate Average Age</title>
+	</head>
+	<body>
+
+
+			<script>
+
+
+				//Question 2
+
+				function car(make,model,color){
+					this.make=make;
+					this.model=model;
+					this.color=color;
+				}
+
+				car.prototype.drive = function(speed){
+								 return "The "+ this.color +" " + this.make +" " + this.model +" is driving at " +speed+"mph";
+				}
+
+				car.prototype.stop = function(){
+						return "The "+ this.color +" " + this.make +" " + this.model +" is stopping";
+				}
+
+				 var redHondaAccord = new car('Red','Accord','Honda');
+				 console.log(redHondaAccord.drive(200));
+				 console.log(redHondaAccord.stop());
+
+      </script>
+
+	</body>
+</html>

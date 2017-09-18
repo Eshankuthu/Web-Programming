@@ -1,0 +1,5 @@
+[
+    { "accountId": "01-982-0001", "firstName": "James","accountype" : "Checking"},
+    { "accountId": "01-982-0002", "firstName": "Anna","accountype" : "Savings" },
+    { "accountId": "01-981-0003", "firstName": "Geoffrey","accountype" : "Checking" }
+]
