@@ -1,0 +1,25 @@
+1. Setup Java Servlet development environment - including Java JDK, a Java IDE and a Web Container. Feel free to choose from the following options (Java IDE - Eclipse or Netbeans or IntelliJIDEA etc, Web/Servlet container - Apache Tomcat or Jetty or Glassfish etc.)
+
+2. Create a first Servlet named HelloServlet, that when invoked with a GET or POST HttpRequest from a browser, will present an HTML webpage with the message, "Hello Java Servlet 3.1".
+
+3. Deploy your Java Web application containing your HelloServlet to your web container.
+
+4. Run your Java web application using a browser and invoke the HelloServlet by entering the following URL - http://yourHostAddress:portNumber/yourWebApplicationName/yourServletURL.
+
+Note: We will perform this tasks in today's lab session, so you can follow along, if you wish to. 
+
+Part 2:
+1) Write a servlet that creates an HTML webpage  for "Contact Us" which has a simple form with the following fields: Name, Gender, Category, Message. Gender will be a radio button element, while Category is a dropdown list of: Feedback, Inquiry, Complaint.
+
+2) Your contact us page should submit the form  (using POST) to another servlet that checks If any field was missing. If it is it should display the original form again (using forward) showing a message of the missed fields.
+
+You can use request.setAttribute("msg", "your msg") in the servlet that is processing the input, before forwarding, and then check in the servlet that makes the form with request.getAttribute("msg") to see if a message is there.
+
+If the form does not have any missing fields redirect the user to a "Thank You" page (servlet) showing data from all fields along with the current Date (redirect with data means putting data into the URL).
+
+3) Your Webpages should have a "Hit Counter" displayed at the bottom of every page showing total number of hits (also known as visits) on a particular page of your website (Use init() method)
+
+4) Using Filters create another "Hit Counter" for the entire Website (total number of hits for your whole website) - Display the counter in the console (System.out).
+
+5) After you finish export your project as a WAR file (Make sure you export the source files too), or just a ZIP and upload it to Sakai along with a small report of (How long did it take you to finish the lab, Any problems and how you solved them).
+
