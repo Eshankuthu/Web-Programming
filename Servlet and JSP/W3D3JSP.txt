@@ -1,0 +1,16 @@
+In this lab/homework assignment, we will modify/enhance yesterday's Lab assignment, to use Java Server Pages (JSPs) in place of Servlets, to present our web pages. i.e. the Contact form page and the ThankYou page should be implemented as JSPs.
+
+The Contact form page should submit the form data to the ProcessContactData servlet, where it will perform the server-side data validation and either re-display the Contact form along with any error messages or display the ThankYou page, with the form data that was submitted. Note: Still using HttpSession to maintain all its state data.
+
+In addition to the above:
+
+1. Simulate storage of all submitted data by using an ArrayList of objects containing the Contact form data. To do this, create java bean class named, ContactMessage. And store the list of ContactMessage objects in the webapp's Application object.
+
+2. For every Contact form data submitted, create a new ContactMessage object and add it to the list.
+
+3. Add a new JSP page named contactMessages.jsp, that displays the list of all Contact messages submitted. Add a link on the ThankYou page that points to a ListMessages servlet with url, /listMessages. The ListMessages servlet will then present the contactMessages JSP page, showing the list of all Contact messages. Note: Use EL and JSTL to iterate through the collection, when presenting data on the JSPs.
+
+When finished, generate a WAR file, including the java source code and upload to Sakai. Add a short report, saying how it went, what you were able to implement and how long it took.
+
+Regards.
+

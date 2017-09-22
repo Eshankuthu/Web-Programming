@@ -1,0 +1,27 @@
+Part 1:
+
+Implement a custom JSP tag as, <ct:currentDateTime>, that takes four attributes, with names given as, fontColor, fontSize dateFormat and timeFormat. The function/purpose of the tag is to render on the webpage, the current Date and Time, formatted as specified on the tag when used on a JSP page.
+
+For Example:
+
+JSP usage:  <ct:currentDateTime color="red" size="12px" dateFormat="E yyyy.MM.dd" timeFormat="hh:mm:ss a zzz" />
+
+HTML output: <span style="color: red; font-size: 12px;">Mon 2016.04.04 at 04:14:09 PM PDT</span>
+
+You may use the following code snippet:
+
+Date dNow = new Date();
+SimpleDateFormat ft = new SimpleDateFormat ("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+System.out.println("Current Date: " + ft.format(dNow));
+
+Part 2:
+
+In this 2nd part of lab/homework assignment, we will enhance/modify yesterday's Lab assignment, by implementing data persistence to a Relational database. i.e. the data submitted by Contact form page should be saved into a database table, named Contacts.
+
+To achieve this, do the following:
+
+1. Setup a database e.g. JavaDB or MySQL or MSSQL Server or any other.
+
+2. Implement code for a Data Access layer in your webapplication, that receives a Contact object, containing the submitted contact data and writes it into a Contacts DB table. (Hint: You may add a DBConnection class and a DBFacade class, as shown in the Data Access lecture slides)
+ 
+
