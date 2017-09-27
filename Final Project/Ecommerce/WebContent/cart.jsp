@@ -42,10 +42,10 @@
 							</div>
 						</div>
 						<div class="panel-body">
-							<table class="table table-striped table-bordered table-list">
+							<table class="table ">
 								<thead>
 									<tr>
-										<th><em class="fa fa-cog"></em></th>
+										<th scope="row"><em class="fa fa-cog"></em></th>
 										<th class="hidden-xs">Product ID</th>
 										<th>Product Name</th>
 										<th>Price</th>
@@ -55,7 +55,7 @@
 									<c:forEach items="${cart.products}" var="product">
 										<tr>
 											<td>
-												<form action="Cart" method="POST">
+												<form class="form-horizontal" action="Cart" method="POST">
 													<input type="submit" name="remove" value="Remove From Cart"
 														class="btn btn-primary" /> <input type="hidden"
 														name="productId"
@@ -65,7 +65,7 @@
 											<td><c:out value="${product.productId}" /></td>
 											<td><c:out value="${product.name}" /></td>
 											<td><c:out value="${product.price}" /></td>
-											</td>
+											
 
 										</tr>
 									</c:forEach>

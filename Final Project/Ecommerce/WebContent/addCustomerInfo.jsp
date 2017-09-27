@@ -17,17 +17,23 @@
 <body>
 <jsp:include page="page_header.jsp" />
 	<div class="mainContainer">
+	
+	<div class="loginmodal-container">
+			
 		<h3>Customer information</h3>
-		<form action="CustomerController" method="post">
+			<br><form action="CustomerController" method="post">
+		
 			<table class="table1">
 				<tr><td><label>Full Name:</label><input required type="text" pattern = "^[a-zA-Z\-]+$" name="name"  class="form-control" /></td></tr>
 				<tr><td><label>E-mail:</label><input  type="text" name="email"  class="form-control"  pattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" /></td></tr>
 				<tr><td><label>Phone:</label><input required type="text" name="phone"  class="form-control" pattern = "^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" /></td></tr>
 				<tr><td><label>User Name:</label><input type="text" required name="uName" class="form-control"/></td></tr>
-				<tr><td><label>Password:</label><input type="password" required name="pwd"  class="form-control" pattern = "^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9!@#$%^&*]{6,16}$"/></td></tr>
+				<!-- <tr><td><label>Password:</label><input type="password" required name="pwd"  class="form-control" pattern = "^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9!@#$%^&*]{6,16}$"/></td></tr> -->
+				<tr><td><label>Password:</label><input type="password" required name="pwd"  class="form-control"/></td></tr>
 				<tr><td><br /><input type="submit" value="Continue" class="btn btn-primary" /></td></tr>
 			</table>
 		</form>
+	</div>
 	</div>
 <jsp:include page="page_footer.jsp" />
 </body>

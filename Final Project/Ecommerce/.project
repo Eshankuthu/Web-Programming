@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>zz</name>
+	<name>OnlineShopping</name>
 	<comment></comment>
 	<projects>
-		<project>jstl-1.2</project>
-		<project>jackson-databind-2.6.3</project>
-		<project>jackson-core-2.6.3</project>
-		<project>mysql-connector-java-5.1.40-bin</project>
-		<project>java-json</project>
-		<project>standard-1.1.2</project>
-		<project>jackson-annotations-2.6.3</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

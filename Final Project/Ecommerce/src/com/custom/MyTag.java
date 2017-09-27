@@ -41,7 +41,7 @@ public class MyTag extends SimpleTagSupport {
 
 		out.println(
 				"<span style=\"color:" + fontColor + "; font-size:" + fontSize + ";\">" + ft.format(dNow) + "</span>");
-		System.out.println("Current Date: " + ft.format(dNow));
+		//System.out.println("Current Date: " + ft.format(dNow));
 	}
 
 }

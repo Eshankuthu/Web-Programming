@@ -16,15 +16,19 @@
 </head>
 <body>
 	<jsp:include page="page_header.jsp" />
-		<div class="mainContainer">
-				<img style="float: left" alt="product_image" src="${product.image}" height="200px" width="200px">
-				<br /><p><strong>${product.name}</strong></p>
-				<p><em>${product.price}</em>
-				</p><textarea rows="5" cols="100" disabled="disabled" class="form-control">${product.description}</textarea>
-				<p style="clear: left"><c:out value = "${product.quantity}"></c:out> left in store</p>
+		<div class="mainContainer" style="border-style: solid; padding:15px">
+				<img style="float: left" alt="product_image" src="${product.image}" height="300px" width="300px">
+				<br /><h3><strong>${product.name}</strong></h3>
+				<h4><strong>${product.price}</h4>
+				<p><c:out value = "${product.quantity}"></c:out> left in store</p>
+				
+				</p><textarea rows="3" cols="100" disabled="disabled" class="form-control">${product.description}</textarea>
+				</br>
 		
-			<a href="Home?action=addToCart&productId=<c:out value="${product.productId}"/>">Add To Cart</a>
-			|| <a href="home.jsp">back to list of products</a>
+			<a  class="btn btn-primary" role="button" href="Home?action=addToCart&productId=<c:out value="${product.productId}"/>">Add To Cart</a>
+			
+			
+			<a href="home.jsp" class="btn btn-primary" role="button">Back to list of products</a>
 		</div>
 		
 	<jsp:include page="page_footer.jsp" />

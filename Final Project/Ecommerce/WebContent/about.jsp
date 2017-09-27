@@ -21,31 +21,38 @@
       <h1 class="my-4">
         <small>It's Nice to Meet You!</small>
       </h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
+      
 
       <!-- Team Members Row -->
       <div class="row">
         <div class="col-lg-12">
           <h2 class="my-4">Our Team</h2>
         </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+        <div class="col-sm-3 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="images/200x200.png" alt="">
           <h3>Eshan Kuthu
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        
         </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+        <div class="col-sm-3 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="images/200x200.png" alt="">
           <h3>Ely Cheikh Deddah
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+         
         </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <h3>John Smith
-            <small>Job Title</small>
+        <div class="col-sm-3 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="images/200x200.png" alt="">
+          <h3>Henok Gebremenfes 
+            
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          
+        </div>
+             <div class="col-sm-3 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="images/200x200.png" alt="">
+          <h3>Selamawit Gebrerufael
+           
+          </h3>
+         
         </div>
         
 
@@ -59,7 +66,7 @@
       </h1>
 <form action="AboutController" method="post">
   				<p><label>Email: <input type="text" name="uemail"  class="form-control"></label></p>
- 			 	<p><label>Comment:<textarea name="comment" cols="60" rows="8" class="form-control">any comment....</textarea> </label></p>
+ 			 	<p><label>Comment:<textarea name="comment" cols="60" rows="8" class="form-control" placeholder="Any comment"></textarea> </label></p>
  			 	<input type="submit" value="submit" class="btn btn-primary"/>
 			</form>
 	</div>

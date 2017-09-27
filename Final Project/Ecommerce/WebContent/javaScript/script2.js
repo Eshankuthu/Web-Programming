@@ -23,7 +23,7 @@ $(function() {
 					"<em>Shipped To: " + this.shippingAddress + "</em>");
 			var bill = $("<p>").html(
 					"<em>Bill Sent To: " + this.billingAddress + "</em>");
-			var tb = $("<table>");
+			var tb = $("<table class=\"table\">");
 			var th = $("<thead>");
 			var tr = $("<tr>");
 			tr.append($("<th>Id</th>"));

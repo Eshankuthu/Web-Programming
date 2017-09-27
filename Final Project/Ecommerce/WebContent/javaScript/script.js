@@ -1,16 +1,17 @@
-$(function() {
+'use strict'
+$(document).ready(function() {
 	ajax_call();
 	//setInterval(ajax_call, 1000*30);
 
 	function ajax_call(){
-		var time = 1000*2;
+		var time = 1;
 		setTimeout(function(){
 			$.ajax({
 				url: "Home",
 				type: "POST",
 				data: {"action": "listProducts"},
 				success: ajaxSuccess,
-				complete: ajax_call
+				//complete: ajax_call
 			});
 		}, time);
 
@@ -18,7 +19,7 @@ $(function() {
 		function ajaxSuccess(data){
 			
 			$("#listProducts").empty();
-			$.each(data, function() {
+			$.each(data, function(i,item) {
 				console.log("name: "+this.name + ", price: " + this.price + ", image: " + this.image)
 				var img = $("<img>", {
 					"style": "float:left",

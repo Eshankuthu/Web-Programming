@@ -24,25 +24,19 @@
 	<jsp:include page="page_header.jsp" />
 	<div class="mainContainer">
 		<div class="container">
-			<div class="jumbotron">
+			<div class="jumbotron" style="margin-right: 8%;margin-left: 0px;">
 				<h1>Online Shopping</h1>
 				<p>Free Shipping WorldWide</p>
 			</div>
 
 		</div>
-		<div class="bigContainer">
-			<%--    Welcome ${userName} --%>
-
-			<div id="listProducts"></div>
-		</div>
-
-		<div class="rightBox">
+		
 
 
 			<h4>
 				<b>List Of Products Added to the Cart</b>
 			</h4>
-			<table border=1 width="500px">
+			<table border=1 width="500px" class="table">
 			<thead class="sticky">
 						<tr>
 							<th>ID</th>
@@ -60,7 +54,14 @@
 					</tr>
 				</c:forEach>
 			</table>
+		
+		<div class="bigContainer">
+			<%--    Welcome ${userName} --%>
+
+			<div id="listProducts" class="container-fluid"></div>
 		</div>
+
+		
 
 	</div>
 	<hr>

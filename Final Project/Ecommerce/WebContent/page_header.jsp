@@ -7,13 +7,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Z hopping</title>
+<title> shopping</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="javaScript/header.js"></script>
 <link rel="stylesheet" href="CSS/styleHF.css">
 <link rel="stylesheet" href="CSS/styleMain.css">
 <link rel="stylesheet" href="CSS/main.css">
@@ -68,18 +69,21 @@
 						<li class="active"><a href="home.jsp">Home</a></li>
 						<li><a href="about.jsp">About</a></li>
 						<li><a href="Cart">Cart</a></li>
-						<li><a href="adminlogin.jsp">Login as Admin</a></li>
+						<li><a href="adminlogin.jsp">Login</a></li>
 					</ul>
 				</div>
 				</nav>
 			</c:otherwise>
 		</c:choose>
-		<hr>
+		
+		
 	</div>
-	<div align="center">
+	<!--  <div id="dateTimeTicker" Style="font-color='blue';"  align="right">
+	<script>new Date()</script>
 		<ct:currentDateTime dateFormat="E yyyy.MM.dd" fontColor="blue"
 			fontSize="15px" timeFormat="hh:mm:ss a zzz" />
-	</div>
+	</div>-->
+	<hr>
 
 
 

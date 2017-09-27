@@ -19,20 +19,30 @@
 
 
 	<div class="mainContainer">
+	
+	
+
+		<div class="loginmodal-container">
+			<h1>Please Login or sign up to continue</h1>
+			<br>
+			<form action="weblogin" method="post">
+				<input required type="text"  value="${cookie.user.value}" name="user_name" placeholder="Username">
+				<input required type="password" name="pass" placeholder="Password">
+				Remember Me <input type="checkbox" <c:if test="${cookie.containsKey('user')}">checked</c:if> name="remember" >
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /> 
+				<input type="submit" name="login" class="login loginmodal-submit"
+					value="Login"> <input type="hidden" name="logintype"
+					value="normal" />
+					<span style="color: red">${err_msg}</span> 
+					<h1><a href="CustomerController">Sign Up</a></h1>
+			</form>
+				
+				
 			
-		<h3>Please Login or sign up to continue</h3>
-		<div class="box col-sm-4">
-		 <form action="weblogin" method="post">
-			User Name: <input required type="text" value="${cookie.user.value}" name="user_name" class="form-control" /><br />
-			Password: <input required type="password" name="pass" class="form-control"/><br /> 
-			Remember Me: <input type="checkbox" <c:if test="${cookie.containsKey('user')}">checked</c:if> name="remember" >
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CustomerController">Sign Up</a> <br />
-			<input type="submit" value="Login" class="btn btn-primary"/>
-			<input type="hidden" name="logintype" value="normal"/>	
-		</form> 
-		<span style="color: red">${err_msg}</span>
 		</div>
 	</div>
+			
+	
 	<hr>
 <jsp:include page="page_footer.jsp" />	
 </body>

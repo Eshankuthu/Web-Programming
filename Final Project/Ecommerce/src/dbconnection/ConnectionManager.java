@@ -13,7 +13,7 @@ public class ConnectionManager {
 
        try {
     	   Class.forName("com.mysql.jdbc.Driver");
-           con = DriverManager.getConnection("jdbc:mysql://localhost:3306/webstore?zeroDateTimeBehavior=convertToNull", "root", "root");
+           con = DriverManager.getConnection("jdbc:mysql://localhost:3306/webstore?zeroDateTimeBehavior=convertToNull", "root", "");
 
            return con;
        } catch (Exception e) {
